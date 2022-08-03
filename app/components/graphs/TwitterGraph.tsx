@@ -39,7 +39,7 @@ export default function FacebookGraph({
           className="flex flex-col gap-2 justify-center p-4 "
         >
           <div className="domain">{domain || ""}</div>
-          <div className="title">
+          <div className="title dark:text-white">
             <span style={{ overflowWrap: "break-word" }}>{title || ""}</span>
           </div>
           <div className="description line-clamp-3">{description || ""}</div>
