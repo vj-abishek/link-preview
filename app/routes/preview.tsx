@@ -55,7 +55,7 @@ export default function preview() {
       <div className="container mx-auto">
         <section className="flex flex-col justify-around items-center gap-5 pt-10 pb-10">
           {OpenGraph.og?.title && (
-            <FacebookGraph {...OpenGraph.og} url={OpenGraph.url} />
+            <FacebookGraph url={OpenGraph.url} {...OpenGraph.og} />
           )}
           {OpenGraph.twitter?.title && (
             <TwitterGraph url={OpenGraph.url} {...OpenGraph.twitter} />
