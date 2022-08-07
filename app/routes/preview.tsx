@@ -60,8 +60,12 @@ export default function preview() {
           {OpenGraph.twitter?.title && (
             <TwitterGraph url={OpenGraph.url} {...OpenGraph.twitter} />
           )}
-          {OpenGraph.og?.title && <InstagramGraph {...OpenGraph.og} />}
-          {OpenGraph.og?.title && <WhatsappGraph {...OpenGraph.og} />}
+          {OpenGraph.og?.title && (
+            <InstagramGraph url={OpenGraph.url} {...OpenGraph.og} />
+          )}
+          {OpenGraph.og?.title && (
+            <WhatsappGraph url={OpenGraph.url} {...OpenGraph.og} />
+          )}
           {!OpenGraph.og?.title && (
             <div className="flex min-h-screen flex-col w-full justify-center items-center">
               <h3 className="m-4">no social links found for {OpenGraph.url}</h3>

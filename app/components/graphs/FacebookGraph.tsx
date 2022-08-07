@@ -11,6 +11,7 @@ export default function FacebookGraph({
   url,
   description,
 }: Props) {
+  console.log(url);
   return (
     <main>
       <div className="mb-1 font-sans text-xs text-slate-900 dark:text-white uppercase">
