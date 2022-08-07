@@ -66,7 +66,7 @@ export default function preview() {
           {OpenGraph.og?.title && (
             <WhatsappGraph url={OpenGraph.url} {...OpenGraph.og} />
           )}
-          {!OpenGraph.og?.title && (
+          {!OpenGraph.og?.title && !OpenGraph.twitter?.title && (
             <div className="flex min-h-screen flex-col w-full justify-center items-center">
               <h3 className="m-4">no social links found for {OpenGraph.url}</h3>
               <h1 className="text-9xl text-gray-800 dark:text-slate-100 m-3">
